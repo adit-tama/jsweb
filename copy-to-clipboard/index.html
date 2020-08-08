@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		COPY TO CLIPBOARD
+	</title>
+</head>
+<body>
+	<h1>COPY TO CLIPBOARD<h1>
+	<div>
+		<input id="text" type="text" value="www.pradityadhitama.com" readonly>
+		<button id="btn">copy link</button>
+	<div>
+	<script type="text/javascript">
+		const button = document.getElementById("btn");
+		const text = document.getElementById("text");
+
+		btn.addEventListener('click', () => {
+			alert('this')
+			text.focus()
+			text.select()
+			document.execCommand('copy');
+		})
+	</script>
+</body>
+</html>
